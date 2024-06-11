@@ -1,5 +1,5 @@
 # MyThoughts.AI
-# Chat with Multiple PDFs using Google Gen AI
+# Chat with Multiple documents using Google Gen AI
 This a prototype appllication which takes multiple pdf as input and then answer's questions about the pdf file using Google Gen AI Chat.
 Please find below the documentation with explanations of functions and steps to run the application.
 
@@ -7,7 +7,7 @@ Please find below the documentation with explanations of functions and steps to 
 
 This section explains the functionalities of each function within the code:
 
-**1. `get_pdf_text(pdf_bytes)`**
+**1. `get_document_text(docs_bytes)`**
 
 * **Purpose:** Extracts text content from uploaded PDF files.
 * **Parameters:**
@@ -25,7 +25,7 @@ This section explains the functionalities of each function within the code:
 
 * **Purpose:** Splits the extracted text into manageable chunks for vectorization (embedding generation).
 * **Parameters:**
-    * `text (str)`: The complete extracted text content from the PDF(s).
+    * `text (str)`: The complete extracted text content from the documents.
 * **Returns:**
     * `list`: A list containing text chunks of a specified size with some overlap for context.
 * **Explanation:**
@@ -89,10 +89,8 @@ Use the following bash code: `streamlit run app.py`.
 
 Once the application is running, follow the steps below:
 
-1. **Upload PDF Documents:** Use the file uploader to upload one or more PDF documents.
+1. **Upload  Documents:** Use the file uploader to upload one or more PDF documents.
 2. **Submit & Process:** Click the "Submit & Process" button to extract text from the uploaded PDFs and process them for further interaction.
 3. **Ask a Question:** Enter your question related to the content of the uploaded PDF files.
 4. **View Response:** The application will provide a response based on the question asked, utilizing the context from the processed PDFs.
 
-### Example Usage
-![alt text](V2_Summary.png)
