@@ -1,6 +1,6 @@
 # MyThoughts.AI
 # Chat with Multiple documents using Google Gen AI
-This a prototype appllication which takes multiple pdf as input and then answer's questions about the pdf file using Google Gen AI Chat.
+This a prototype application which takes multiple documents as input and then answer's questions about the pdf file using Google Gen AI Chat.
 Please find below the documentation with explanations of functions and steps to run the application.
 
 ## Explanation of Functions
@@ -9,11 +9,11 @@ This section explains the functionalities of each function within the code:
 
 **1. `get_document_text(docs_bytes)`**
 
-* **Purpose:** Extracts text content from uploaded PDF files.
+* **Purpose:** Extracts text content from uploaded documents files.
 * **Parameters:**
-    * `pdf_bytes (bytes)`: The raw byte data representing the uploaded PDF document.
+    * `pdf_bytes (bytes)`: The raw byte data representing the uploaded document.
 * **Returns:**
-    * `str`: The extracted text content from all pages within the PDF.
+    * `str`: The extracted text content from all pages within the document.
 * **Explanation:**
     1. Creates an in-memory stream (`io.BytesIO`) from the provided byte data.
     2. Initializes a `PdfReader` object from PyPDF2 to parse the PDF content.
